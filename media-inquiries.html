@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Omega : Your Best American Girl</title>
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Homemade+Apple&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="sideNavBar" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">(H)Omega</a>
+        <a href="about.html">Meet Omega</a>
+        <a href="media-inquiries.html">Media Inquiries</a>
+        <a href="gallery.html">Gallery</a>
+        <a target="_blank" href="http://www.parl.org/donate">Donate</a>
+        <a target="_blank" href="https://www.instagram.com/omegathedog/"><i id="insta-sidebar" class="fab fa-instagram fa-2x"></i></a>
+        <a target="_blank" href="https://www.instagram.com/omegathedog/"><i id="insta-sidebar" class="fas fa-envelope fa-2x"></i></a>
+        </a>
+    </div>
+    <div id="main">
+        <div class="logo-box">
+            <img src="img/logo-white.png" alt="logo" class="logo">
+        </div>
+        <div class="wrapper">
+            <video autoplay loop muted id="nurture-video" class="wrapper__media">
+                <source src="/img/nurture.mp4">
+            </video>
+        </div>
+        <div class="media-overlay"></div>
+        <div class="container">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+    </div>
+    <script src="script.js"></script>
+</body>
