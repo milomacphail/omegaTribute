@@ -16,14 +16,47 @@
         <a href="media-inquiries.html">Media Inquiries</a>
         <a href="gallery.html">Gallery</a>
         <a target="_blank" href="http://www.parl.org/donate">Donate</a>
-        <a target="_blank" href="https://www.instagram.com/omegathedog/"><i id="insta-sidebar" class="fab fa-instagram fa-2x"></i></a>
-        <a target="_blank" href="https://www.instagram.com/omegathedog/"><i id="insta-sidebar" class="fas fa-envelope fa-2x"></i></a>
-        </a>
+        <a target="_blank" href="https://www.instagram.com/omegathedog/"><i id="insta-sidebar"
+                class="fab fa-instagram fa-2x"></i></a>
+        <!-- Trigger/Open The Modal -->
+        <a><i id="open-modal" class="fas fa-envelope fa-2x"></i></a>
+
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p class="close">&times;</p>
+                <div class="container">
+                    <form action="action_page.php">
+
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                        <input type="submit" value="Submit">
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <br />
+        <br />
+        <a target="_blank" href="https://www.instagram.com/omegathedog/"><i id="insta-sidebar"
+            class="fab fa-instagram fa-2x"></i></a>
     </div>
     <div id="main">
         <div class="logo-box">
-             <i id="open-menu" class="fas fa-bars fa-2x" onclick="openNav()"></i>
-          </div>
+            <i id="open-menu" class="fas fa-bars fa-2x" onclick="openNav()"></i>
+        </div>
         <div class="wrapper">
             <video autoplay loop muted class="wrapper__media">
                 <source src="/img/snow_Cover.MP4">
@@ -32,9 +65,8 @@
         <div class="hero-text">
             <h1>Hi, my name is Omega</h1>
             <p>I live in Providence, Rhode Island. I'm single. And that's fine with me.</p>
-            <button>Hire me</button>
-          </div>
-        <div class="media-overlay"></div>
+        </div>
+        <div class="media-overlay"></div> 
     </div>
     <script src="script.js"></script>
 </body>
