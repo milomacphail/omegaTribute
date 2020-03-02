@@ -13,61 +13,39 @@
 </head>
 
 <body>
-    <div id="sideNavBar" class="sidenav">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        <a href="index.html">(H)Omega</a>
-        <a href="about.html">Meet Omega</a>
-        <a href="media-inquiries.html">Media Inquiries</a>
-        <a href="gallery.html">Gallery</a>
-        <a target="_blank" href="http://www.parl.org/donate">Donate</a>
-        <a target="_blank" href="https://www.instagram.com/omegathedog/"><i id="insta-sidebar"
-                class="fab fa-instagram fa-2x"></i></a>
-        <a><i id="open-modal" class="fas fa-envelope fa-2x"></i></a>
 
-        <div id="myModal" class="modal">
+    <div id="navbar" class="overlay">
 
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <section class="row mt-5 text-center">
-                    <div class="col-md-6 m-auto">
-                        <h1><i class="fas fa-newspaper fa-2x"></i></h1>
-                        <h1 class="display-4">Newsletter Signup</h1>
-                        <p class="lead">
-                            Enter your info to get our awesome monthly newsletter
-                        </p>
-                        <form action="/signup" method="POST">
-                            <div class="form-group">
-                                <input type="text" name="firstName" id="first-name" class="form-control"
-                                    placeholder="First Name" />
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="lastName" id="last-name" class="form-control"
-                                    placeholder="Last Name" />
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" id="email" class="form-control" placeholder="Email" />
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-block">
-                                Sign Up
-                            </button>
-                        </form>
-                    </div>
-                </section>
-            </div>
 
+        <!-- Overlay content -->
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">(H)Omega</a>
+            <a href="about.html">Meet Omega</a>
+            <a href="media-inquiries.html">Media Inquiries</a>
+            <a href="gallery.html">Gallery</a>
+            <a target="_blank" href="http://www.parl.org/donate">Donate</a>
+            <a target="_blank" href="https://www.instagram.com/omegathedog/"><i id="insta-sidebar"
+                    class="fab fa-instagram fa-2x"></i></a> -->
+            <a><i id="open-modal" class="fas fa-envelope fa-2x"></i></a>
         </div>
     </div>
-    <div id="main">
-        <div class="logo-box">
-            <i id="open-menu" class="fas fa-bars fa-2x" onclick="openNav()"></i>
-        </div>
-        <div class="wrapper" id="gallery-feed">
-            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-            <div class="elfsight-app-d4a474e6-870f-48f5-8294-867ae33282d6"></div>
-        </div>
+
+    <div class="logo-box">
+        <i id="open-menu" class="fas fa-bars fa-2x" onclick="openNav()"></i>
     </div>
-    <script src="script.js"></script>
+    <div class="wrapper">
+        <video autoplay loop muted class="wrapper__media">
+            <source src="/img/snow_Cover.MP4">
+        </video>
+    </div>
+    <div class="media-overlay"></div>
+    <div class="hero-text" id="landing-text">
+        <h1>Hi, my name is Omega</h1>
+        <p>I live in Providence, Rhode Island. I'm single. And that's fine with me.</p>
+    </div>
+    </div>
+
+    <script src="test-scripts.js"></script>
 </body>
