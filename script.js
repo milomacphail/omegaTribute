@@ -1,12 +1,11 @@
 /* Set the width of the side navigation to 275px */
 function openNav() {
-  document.getElementById("sideNavBar").style.width = "270px";
-}
+  document.getElementById("sideNavBar").style.width = "10%";
+  }
 
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  document.getElementById("sideNavBar").style.width = "0px";
-}
+  function closeNav(){
+    document.getElementById('sideNavBar').style.width = '0';
+  }
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -31,5 +30,14 @@ span.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+  }
+}
+
+function myFunction() {
+  var x = document.getElementById("sideNavBar");
+  if (x.className === "sidenav") {
+    x.className += " responsive";
+  } else {
+    x.className = "sidenav";
   }
 }

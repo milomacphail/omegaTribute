@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
     <title>Omega : Your Best American Girl</title>
+    <link rel="icon" type="image/png" href="img/omega.png">
     <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Homemade+Apple&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -13,7 +14,9 @@
 
 <body>
     <div id="sideNavBar" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
         <a href="index.html">(H)Omega</a>
         <a href="about.html">Meet Omega</a>
         <a href="media-inquiries.html">Media Inquiries</a>
@@ -21,7 +24,6 @@
         <a target="_blank" href="http://www.parl.org/donate">Donate</a>
         <a target="_blank" href="https://www.instagram.com/omegathedog/"><i id="insta-sidebar"
                 class="fab fa-instagram fa-2x"></i></a>
-        <!-- Trigger/Open The Modal -->
         <a><i id="open-modal" class="fas fa-envelope fa-2x"></i></a>
 
         <div id="myModal" class="modal">
@@ -29,30 +31,39 @@
             <!-- Modal content -->
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <div class="container">
-                    <form action="action_page.php">
-
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                        <label for="country">Country</label>
-                        <select id="country" name="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
-                        </select>
-                        <input type="submit" value="Submit">
-
-                    </form>
-                </div>
+                <section class="row mt-5 text-center">
+                    <div class="col-md-6 m-auto">
+                        <h1><i class="fas fa-newspaper fa-2x"></i></h1>
+                        <h1 class="display-4">Newsletter Signup</h1>
+                        <p class="lead">
+                            Enter your info to get our awesome monthly newsletter
+                        </p>
+                        <form action="/signup" method="POST">
+                            <div class="form-group">
+                                <input type="text" name="firstName" id="first-name" class="form-control"
+                                    placeholder="First Name" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="lastName" id="last-name" class="form-control"
+                                    placeholder="Last Name" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Email" />
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                Sign Up
+                            </button>
+                        </form>
+                    </div>
+                </section>
             </div>
 
         </div>
     </div>
     <div id="main">
+        <div class="logo-box">
+            <i id="open-menu" class="fas fa-bars fa-2x" onclick="openNav()"></i>
+        </div>
         <div class="wrapper">
             <video autoplay loop muted class="wrapper__media">
                 <source src="/img/thats-amore.mp4">
