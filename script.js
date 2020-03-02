@@ -4,7 +4,7 @@ function openNav() {
   }
 
   function closeNav(){
-    document.getElementById('sideNavBar').style.width = '0';
+    document.getElementById('sideNavBar').style.width = '0%';
   }
 
 // Get the modal
