@@ -8,4 +8,5 @@ function openNav() {
 function closeNav() {
   document.getElementById("navbar").style.width = "0%";
   document.getElementById("landing-text").style.opacity = "1";
+  
 }
