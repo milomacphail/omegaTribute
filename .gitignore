@@ -1,6 +1,7 @@
 # Local Netlify folder
 .netlify
 test.html
-test-scripts.js
 test-styles.css
+script.js
+
 
