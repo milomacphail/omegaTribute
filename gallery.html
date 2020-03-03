@@ -12,10 +12,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body id="gallery-feed">
 
     <div id="navbar" class="overlay">
-
 
         <!-- Overlay content -->
 
@@ -35,17 +34,20 @@
     <div class="logo-box">
         <i id="open-menu" class="fas fa-bars fa-2x" onclick="openNav()"></i>
     </div>
-    <div class="wrapper">
-        <video autoplay loop muted class="wrapper__media">
-            <source src="/img/snow_Cover.MP4">
-        </video>
-    </div>
-    <div class="media-overlay"></div>
-    <div class="hero-text" id="landing-text">
-        <h1>Hi, my name is Omega</h1>
-        <p>I live in Providence, Rhode Island. I'm single. And that's fine with me.</p>
-    </div>
-    </div>
-
-    <script src="test-scripts.js"></script>
+    <div class="container" id="gallery-feed">
+        <div class="item"><a href="img\couch-snooze.jpg" data-fancybox="gallery"><img src="img\couch-snooze.jpg" alt="Omega asleep."></a></div>
+        <div class="item"><a href="img\iceyCrop.jpg" data-fancybox="gallery"><img src="img\iceyCrop.jpg" alt="Omega on ice."></a></div>
+        <div class="item"><a href="img\snowpiercer1.JPG" data-fancybox="gallery"><img src="img\snowpiercer1.JPG" alt="In the snow!"></a></div>
+        <div class="item"><a href="https://images.pexels.com/photos/206673/pexels-photo-206673.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery"><img src="https://images.pexels.com/photos/206673/pexels-photo-206673.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="country house in the woods"></a></div>
+        <div class="item"><a href="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery"><img src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="lake view between two trees with mountain in the background"></a></div>
+        <div class="item"><a href="https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery"><img src="https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="forest with a focus on an old oak tree"></a></div>
+        <div class="item"><a href="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery"><img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="lake in a valley"></a></div>
+        <div class="item"><a href="https://images.pexels.com/photos/129105/pexels-photo-129105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery"><img src="https://images.pexels.com/photos/129105/pexels-photo-129105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="tree top view looking out over forest"></a></div>
+        <div class="item"><a href="https://images.pexels.com/photos/131723/pexels-photo-131723.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery"><img src="https://images.pexels.com/photos/131723/pexels-photo-131723.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="sun shining through trees"></a></div>
+        <div class="item"><a href="https://images.pexels.com/photos/225203/pexels-photo-225203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery"><img src="https://images.pexels.com/photos/225203/pexels-photo-225203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="island on a lake"></a></div>
+        <div class="item"><a href="https://images.pexels.com/photos/460621/pexels-photo-460621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery"><img src="https://images.pexels.com/photos/460621/pexels-photo-460621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="waterfall surrounded by green trees"></a></div>
+        <div class="item"><a href="https://images.pexels.com/photos/145685/pexels-photo-145685.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-fancybox="gallery"><img src="https://images.pexels.com/photos/145685/pexels-photo-145685.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="beautiful garden in back yard"></a></div>
+      </div>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="scripts.js"></script>
 </body>

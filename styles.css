@@ -1,14 +1,10 @@
 body {
-  overflow: hidden;
+  overflow: scroll;
   font-family: sans-serif;
 }
 
-#landing{
+#static-page{
   overflow: hidden;
-}
-
-#galleryfeed{
-  margin-top: 0;
 }
 
 .wrapper{
@@ -62,13 +58,14 @@ body {
   background-color: rgb(0,0,0); /* Black fallback color */
   background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
   overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  transition: 0.75s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
 /* Position the content inside the overlay */
 .overlay-content {
   position: relative;
-  top: 15%; /* 25% from the top */
+  top: 3%;
+  line-height: 1.75;
   width: 100%; /* 100% width */
   text-align: center; /* Centered text/links */
   margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
@@ -79,20 +76,32 @@ body {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #818181;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
+  color: #fff;
+  display: block;
+  transition: 0.5s;
+  margin-top: -4px;
+  line-height: normal;
+}
+
+#open-mail{
+  margin-right: 3px;
+  margin-top: -2px;
+}
+
+#insta-sidebar{
+  margin-right: 4px;
 }
 
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color: rgb(155, 155, 229);
+  animation: bounce;
 }
 
 /* Position the close button (top right corner) */
 .overlay .closebtn {
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 45px;
   font-size: 60px;
 }
@@ -124,7 +133,21 @@ body {
   transform: translate(-50%, -50%);
   color: white;
   z-index: 3;
+  animation: transitionIn 0.75;
+  -moz-animation: transitionIn 0.75;
+  -webkit-animation: transitionIn 0.75;
+}
+
+@keyframes transitionIn{
+  0% {
+    opacity: 0;
+    transform: rotateX(-10deg);
   }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
   
   .hero-text h1{
     font-family: 'Homemade Apple' ;
@@ -136,15 +159,6 @@ body {
     font-size:1.5rem;
     display:block;
     padding-bottom:2rem;
-  }
-
-  #social-icon {
-    display: flex;
-    text-align: center; /* Center-align text */
-    padding: 16px; /* Add some padding */
-    transition: all 0.3s ease; /* Add transition for hover effects */
-    color: white; /* White text color */
-    font-size: 36px; /* Increased font-size */
   }
 
 /* The Modal (background) */
@@ -195,6 +209,8 @@ body {
   transform: translate(-50%, -50%);
   color: white;
   z-index: 3;
+  display: flex;
+  justify-content: center;
 }
 
 .content-column {
@@ -215,3 +231,31 @@ body {
   }
 }
 
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  justify-items: center;
+  grid-gap: 0;
+  top: 0;
+  left: 0;
+}
+  
+.item{
+  width: 100%;
+  overflow: hidden;
+  background: #000;     
+}
+
+img{
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+  
+img:hover{
+  opacity: 1;
+  transform: scale(1.03)
+}
