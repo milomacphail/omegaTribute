@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
 body {
   overflow: scroll;
-  font-family: sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+
 }
 
 #static-page{
@@ -64,7 +67,8 @@ body {
 /* Position the content inside the overlay */
 .overlay-content {
   position: relative;
-  top: 3%;
+  top: 15%;
+  margin-right: 30px;
   line-height: 1.75;
   width: 100%; /* 100% width */
   text-align: center; /* Centered text/links */
@@ -84,7 +88,7 @@ body {
 }
 
 #open-mail{
-  margin-right: 3px;
+  margin-left: 1px;
   margin-top: -2px;
 }
 

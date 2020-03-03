@@ -1,5 +1,6 @@
 /* Open when someone clicks on the span element */
 function openNav() {
+  console.log('click');
   document.getElementById("navbar").style.width = "100%";
 }
 
